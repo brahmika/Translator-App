@@ -11,7 +11,7 @@ body{
   justify-content: center;
   padding: 0 10px;
   min-height: 100vh;
-  background: #040404;
+  background: #4379F2;
 }
 .container{
   max-width: 690px;
@@ -94,7 +94,7 @@ body{
   background: #fff;
 }
 .text-input textarea::-webkit-scrollbar-thumb{
-  background: #ddd;
+  background: #fffefe;
   border-radius: 8px;
 }
 .controls .row select::-webkit-scrollbar-thumb{
@@ -121,71 +121,106 @@ body{
   margin-top: 20px;
   font-size: 17px;
   border-radius: 5px;
-  background: #000000;
+  background: #4379F2;
 }
-@media (max-width: 660px) {
-  .container {
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
+/* @media (max-width: 660px){
+  .container{
+    padding: 20px;
+  }
+  .wrapper .text-input{
+    flex-direction: column;
+  }
+  .text-input .to-text{
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+  }
+  .text-input textarea{
+    height: 200px;
+  }
+  .controls .row .icons{
+    display: none;
+  }
+  .container button{
+    padding: 13px;
+    font-size: 16px;
+  }
+  .controls .row select{
+    font-size: 16px;
+  }
+  .controls .exchange{
+    font-size: 14px;
+  }
+} */
+@media (max-width: 660px){
+  .container{
     padding: 15px;
   }
-
-  .wrapper {
-    display: flex;
+  .wrapper .text-input{
+    flex-direction: column;
+  }
+  .text-input .to-text{
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+  }
+  .text-input textarea{
+    height: 180px;
+  }
+  .controls{
     flex-direction: column;
     align-items: center;
   }
-
-  .text-input {
-    flex-direction: column;
+  .controls .row{
     width: 100%;
-  }
-
-  .text-input textarea {
-    height: 150px;
-    width: 100%;
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  .controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .controls .row {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
   }
-
-  .controls .icons {
+  .controls .row .icons{
     display: flex;
     gap: 10px;
-    justify-content: center;
-    width: 100%;
   }
-
-  .controls select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .controls .exchange {
+  .controls .row .icons i{
     font-size: 18px;
-    cursor: pointer;
+    width: 40px;
   }
-
-  button {
-    width: 100%;
+  .container button{
     padding: 12px;
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 15px;
   }
+}
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.splash-container {
+  text-align: center;
+}
+
+.app-logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.app-name {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background: #ffffff;
+  color: #4379F2;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.heading-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
